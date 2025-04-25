@@ -1,0 +1,27 @@
+<html>
+<head>
+  <title>Cuestionario de Ciencias Naturales</title>
+  <link rel="stylesheet" href="sk2.css" />
+</head>
+<body>
+  <div id="loginContainer" class="login-container">
+    <h2>Iniciar sesion</h2>
+    <input type="text" id="usuario" placeholder="Usuario" />
+    <input type="password" id="contrasena" placeholder="Contrasena" />
+    <button onclick="iniciarSesion()">Entrar</button>
+    <p id="loginError"></p>
+  </div>
+
+  <div id="cuestionarioContainer" class="oculto">
+    <div class="container">
+      <h1>Preguntas de Ciencias Naturales</h1>
+      <div id="temporizador">Tiempo restante: 30:00</div>
+      <form id="quizForm"></form>
+      <button type="button" onclick="mostrarResultados()">Enviar respuestas</button>
+      <div id="resultados"></div>
+    </div>
+  </div>
+
+  <script src="sk1.js"></script>
+</body>
+</html>
